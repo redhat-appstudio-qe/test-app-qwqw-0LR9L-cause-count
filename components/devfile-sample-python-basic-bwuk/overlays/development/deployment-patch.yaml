@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-bwuk
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-sumn-tenant/test-app-qwqw/devfile-sample-python-basic-bwuk@sha256:cd850040805a567c4dfaeb7ece415cd435f36b4cbee318686e28c6719d5bdf9c
+        name: my-python
+        resources: {}
+status: {}
